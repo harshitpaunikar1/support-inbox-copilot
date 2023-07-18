@@ -32,3 +32,7 @@
 
 - Task summary: This was the middle stretch where the project started feeling real. I kept going and tried to sketch a lightweight architecture or component breakdown, then cleaned up whatever looked confusing or weak from the earlier days. Once the base made some sense, I could finally move a bit faster and stop second guessing every tiny decision. I was also trying to keep the idea grounded so it did not drift into random features for no reason.
 - Deliverable: Ended the day with system sketch in hand, plus a few side notes on what still needed fixing later. I also left myself a few rough reminders for the next day so I would not have to rediscover the same context again.
+## 2023-07-18 - Day 6: Architecture
+
+- Task summary: Spent another hour on this: resolved a merge conflict that came up when I switched branches to check something else.
+- Deliverable: Nothing dramatic — just keeping things tidy.
