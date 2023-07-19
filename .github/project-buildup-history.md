@@ -36,3 +36,7 @@
 
 - Task summary: Spent another hour on this: resolved a merge conflict that came up when I switched branches to check something else.
 - Deliverable: Nothing dramatic — just keeping things tidy.
+## 2023-07-19 - Day 7: HTML scaffold
+
+- Task summary: This was the middle stretch where the project started feeling real. I kept going and tried to build the base page structure or component skeleton, then cleaned up whatever looked confusing or weak from the earlier days. The middle part always takes longer than it should, mostly becuase one fix usually reveals two more things to clean up. A good chunk of the day went into making the flow feel believable from a user point of view.
+- Deliverable: Ended the day with initial UI structure in hand, plus a few side notes on what still needed fixing later. There were still a couple of loose parts, but nothing serious enough to block the next step.
