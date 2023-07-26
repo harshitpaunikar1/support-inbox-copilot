@@ -68,3 +68,7 @@
 
 - Task summary: After stepping away for a bit, came back and re-ran the plots with better axis labels and a more readable color palette.
 - Deliverable: Cleaner than this morning's version.
+## 2023-07-26 - Day 12: Polish wrap
+
+- Task summary: Got stuck mid-afternoon and had to regroup — the variable names were inconsistent so cleaned those up across the notebook before calling it done.
+- Deliverable: Wrapped it up properly this time.
