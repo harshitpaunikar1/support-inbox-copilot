@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automation with Control: The Bound Support Copilot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Greyscale Design System */
+    :root {
+      --bg: #ffffff;
+      --fg: #111111;
+      --gray-xdark: #333333;
+      --gray-dark: #555555;
+      --gray-mid: #999999;
+      --gray-light: #e0e0e0;
+      --gray-xlight: #f9f9f9;
+      
+      --font-body: 'Open Sans', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    body {
+      background-color: var(--bg);
+      color: var(--gray-xdark);
+      font-family: var(--font-body);
+      line-height: 1.65;
+      font-size: 16px;
+    }
+
+    /* Layout structure */
+    .viewport {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 5rem 2rem;
+    }
+    
+    header {
+      border-bottom: 4px solid var(--fg);
+      padding-bottom: 2rem;
+      margin-bottom: 3.5rem;
+    }
+
+    h1 {
+      font-family: var(--font-mono);
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 700;
+      color: var(--fg);
+      line-height: 1.25;
+      letter-spacing: -0.03em;
+      margin-bottom: 1.5rem;
+    }
+
+    .synopsis {
+      font-size: 1.2rem;
+      font-style: italic;
+      color: var(--gray-dark);
+      line-height: 1.5;
+    }
+
+    p { margin-bottom: 1.5rem; }
+    strong { font-weight: 700; color: var(--fg); }
+
+    /* System Boundary H2s */
+    h2 {
+      font-family: var(--font-mono);
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border: 1px solid var(--fg);
+      padding: 0.5rem 1rem;
+      margin: 4rem 0 2rem 0;
+      display: inline-block;
+      box-shadow: 4px 4px 0 var(--gray-light);
+    }
+
+    h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--fg);
+      margin: 2.5rem 0 1rem 0;
+      border-bottom: 1px solid var(--gray-light);
+      padding-bottom: 0.3rem;
+    }
+
+    /* Interaction Mockups / Rule Logic */
+    .rule-block {
+      background-color: var(--gray-xlight);
+      border: 1px solid var(--gray-light);
+      border-left: 4px solid var(--gray-mid);
+      padding: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .rule-block .rule-header {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--gray-dark);
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+    }
+    
+    .rule-block p {
+      margin-bottom: 0;
+      font-size: 0.95rem;
+    }
+
+    /* UI Inset */
+    .ui-mockup {
+      border: 2px solid var(--fg);
+      border-radius: 4px;
+      overflow: hidden;
+      margin: 2.5rem 0;
+    }
+    .ui-header {
+      background-color: var(--gray-light);
+      padding: 0.5rem 1rem;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--gray-dark);
+      border-bottom: 1px solid var(--gray-dark);
+    }
+    .ui-body {
+      padding: 1.5rem;
+      background-color: var(--bg);
+    }
+    .button {
+      display: inline-block;
+      border: 1px solid var(--fg);
+      padding: 0.5rem 1rem;
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      font-weight: 700;
+      background-color: var(--bg);
+      color: var(--fg);
+      text-transform: uppercase;
+    }
+    .button.primary {
+      background-color: var(--fg);
+      color: var(--bg);
+    }
+
+    /* SVG Figure */
+    .figure-wrapper {
+      margin: 5rem 0;
+      width: 100%;
+      border: 1px solid var(--gray-light);
+      padding: 2rem;
+      background-color: var(--bg);
+    }
+    figcaption {
+      font-size: 0.9rem;
+      color: var(--gray-dark);
+      margin-top: 1.5rem;
+      font-style: italic;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="viewport">
+    <header>
+      <h1>Automation with Control: The Bound Support Copilot</h1>
+      <p class="synopsis">The central metric of customer support is resolution accuracy, not reply speed. When artificial intelligence is integrated into an inbox purely to maximize ticket deflection, the result is hallucinated policies, infuriated users, and severe reputational damage. A sustainable support architecture treats AI not as an autonomous responder, but as a rigid drafting layer gated by human oversight.</p>
+    </header>
+
+    <p>Deploying a Large Language Model directly connected to a customer email address is a profound operational error. LLMs are structurally designed to appease the user, meaning they are inherently predisposed to issuing unauthorized refunds, inventing feature timelines, and apologizing for system mechanics that are functioning exactly as intended.</p>
+
+    <p>A Support Copilot should not be defined by its text generation capabilities. Its value is defined by its routing thresholds. A system must know precisely when to act, when to prepare a draft for a human, and when to refuse engagement entirely. We achieve this by inserting a deterministic confidence threshold meter into the semantic triage pipeline.</p>
+
+    <h2>[BOUNDARY 01] Semantic Triage & Thresholds</h2>
+
+    <p>Every inbound ticket undergoes semantic classification before a response is even considered. The system generates an embedding of the customer's text and compares it against hundreds of historically resolved tickets stored in a vector database. Crucially, the system calculates a <strong>Confidence Score (0.0 to 1.0)</strong> representing the semantic proximity of the current ticket to established, resolved templates.</p>
+
+    <div class="rule-block">
+      <div class="rule-header">Threshold Engine Constraints</div>
+      <p><strong>[> 0.92] AUTO_RESOLVE:</strong> Standardized, zero-friction requests (e.g., "Where is my tracking link?"). The system fetches the tracking API, generates the reply, and sends it autonomously. Zero human touch required.</p>
+    </div>
+
+    <div class="rule-block">
+      <div class="rule-header">Threshold Engine Constraints</div>
+      <p><strong>[0.65 - 0.91] COPILOT_DRAFT:</strong> Mid-variance requests (e.g., "My order is delayed and I want to change the address"). The system gathers order data, drafts the reply using brand voice, and queues it in the agent's staging area. It does not send.</p>
+    </div>
+
+    <div class="rule-block">
+      <div class="rule-header">Threshold Engine Constraints</div>
+      <p><strong>[< 0.64] MANUAL_ESCALATION:</strong> High-friction or emotional requests (e.g., "Your update deleted my account data"). The LLM is bypassed entirely. The ticket is immediately routed to a senior tier-two human agent. No draft is attempted to avoid anchoring bias.</p>
+    </div>
+
+    <!-- Threshold Figure -->
+    <div class="figure-wrapper">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%">
+        <rect width="800" height="450" fill="#ffffff" />
+        
+        <!-- Background Grid for metrics -->
+        <line x1="150" y1="50" x2="150" y2="400" stroke="#f0f0f0" stroke-width="1" />
+        <line x1="400" y1="50" x2="400" y2="400" stroke="#f0f0f0" stroke-width="1" />
+        <line x1="650" y1="50" x2="650" y2="400" stroke="#f0f0f0" stroke-width="1" />
+        
+        <!-- Y Axis Line -->
+        <rect x="250" y="50" width="8" height="350" fill="#111111" />
+        
+        <!-- Triage Engine Entry -->
+        <rect x="50" y="200" width="120" height="50" fill="#ffffff" stroke="#111111" stroke-width="2" />
+        <text x="110" y="225" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" text-anchor="middle" fill="#111111">INBOUND</text>
+        <path d="M 170 225 L 240 225" stroke="#111111" stroke-width="2" marker-end="url(#arrowhead)" />
+        
+        <!-- Branches -->
+        <!-- High -->
+        <path d="M 260 225 L 300 225 L 300 100 L 330 100" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#arrowhead)" />
+        <text x="210" y="90" font-family="'JetBrains Mono', monospace" font-size="12" fill="#555555">SCORE > 0.92</text>
+        
+        <!-- Mid -->
+        <path d="M 260 225 L 330 225" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#arrowhead)" />
+        <text x="210" y="215" font-family="'JetBrains Mono', monospace" font-size="12" fill="#555555">SCORE 0.65-0.91</text>
+        
+        <!-- Low -->
+        <path d="M 260 225 L 300 225 L 300 350 L 330 350" fill="none" stroke="#111111" stroke-width="2" stroke-dasharray="4 4" marker-end="url(#arrowhead)" />
+        <text x="210" y="340" font-family="'JetBrains Mono', monospace" font-size="12" fill="#555555">SCORE < 0.64</text>
+
+        <!-- Node Boxes -->
+        <rect x="340" y="75" width="160" height="50" fill="#f9f9f9" stroke="#111111" stroke-width="1" />
+        <text x="420" y="105" font-family="'JetBrains Mono', monospace" font-size="12" text-anchor="middle" fill="#111111">AUTO RESPOND</text>
+        
+        <rect x="340" y="200" width="160" height="50" fill="#f9f9f9" stroke="#111111" stroke-width="1" />
+        <text x="420" y="230" font-family="'JetBrains Mono', monospace" font-size="12" text-anchor="middle" fill="#111111">HUMAN REVIEW</text>
+        
+        <rect x="340" y="325" width="160" height="50" fill="#111111" />
+        <text x="420" y="355" font-family="'JetBrains Mono', monospace" font-size="12" text-anchor="middle" fill="#ffffff">MANUAL TIER-2</text>
+        
+        <!-- UI Inset Link for Mid branch -->
+        <path d="M 500 225 L 540 225" stroke="#111111" stroke-width="1" stroke-dasharray="2 2" marker-end="url(#arrowhead)" />
+        
+        <!-- UI Inset Box -->
+        <g transform="translate(550, 165)">
+          <rect width="200" height="120" fill="#ffffff" stroke="#111111" stroke-width="2" />
+          <rect width="200" height="20" fill="#e0e0e0" />
+          <text x="10" y="14" font-family="'JetBrains Mono', monospace" font-size="8" fill="#333333">AGENT DASHBOARD</text>
+          
+          <rect x="10" y="35" width="180" height="40" fill="#f9f9f9" stroke="#e0e0e0" stroke-width="1" />
+          <text x="15" y="47" font-family="'Open Sans', sans-serif" font-size="8" fill="#555555">Draft ready. Review necessary.</text>
+          
+          <rect x="10" y="85" width="60" height="20" fill="#111111" />
+          <text x="40" y="98" font-family="'JetBrains Mono', monospace" font-size="8" fill="#ffffff" text-anchor="middle">SEND</text>
+          
+          <rect x="80" y="85" width="60" height="20" fill="#ffffff" stroke="#111111" stroke-width="1" />
+          <text x="110" y="98" font-family="'JetBrains Mono', monospace" font-size="8" fill="#111111" text-anchor="middle">EDIT</text>
+        </g>
+        
+        <defs>
+          <marker id="arrowhead" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto">
+            <polygon points="0 0, 6 2, 0 4" fill="#111111" />
+          </marker>
+        </defs>
+      </svg>
+      <figcaption>Fig 1. — The Confidence Threshold Meter. Raw ticket flow is intercepted by the semantic engine strictly to calculate routing trajectories. High-confidence hits bypass humans safely. Mid-tier ambiguity produces a staged draft, requiring immediate human validation. Low-confidence outliers drop directly into manual queueing to prevent AI hallucination injuries.</figcaption>
+    </div>
+
+    <h2>[BOUNDARY 02] The Human-in-the-Loop Interface</h2>
+
+    <p>When a ticket falls into the <code>COPILOT_DRAFT</code> tier, the objective changes. The AI is no longer operating automatically; it is merely preparing an environment for the human support agent. The interface the human interacts with determines the ultimate safety of the response.</p>
+
+    <p>We designed the dashboard to prevent "review fatigue." When an agent opens the ticket, the drafted text is displayed alongside explicitly highlighted data variables. If the AI hallucinated an order number, the interface forces the agent to physically click on the data variables to verify their source payload. Human operators are not treated as secondary observers; they hold the override keys.</p>
+
+    <div class="ui-mockup">
+      <div class="ui-header">COPILOT OVERRIDE MODE :: TICKET #45902</div>
+      <div class="ui-body">
+        <p style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--gray-dark); margin-bottom: 1rem;">
+          [ SYSTEM ] Context loaded. Sentiment: Frustrated. Resolution type: Address modification.<br>
+          [ DRAFT ] Attached below. Review before execution.
+        </p>
+        <p style="border-left: 3px solid var(--fg); padding-left: 1rem; margin-bottom: 2rem;">
+          Hi Sarah,<br><br>I understand you need to reroute your recent order. I have successfully updated the destination address to [1442 Oak Avenue, Chicago IL] and confirmed the carrier intercept.<br><br>Best.
+        </p>
+        <button class="button primary">Approve & Send</button>
+        <button class="button">Reject & Manual Rewrite</button>
+      </div>
+    </div>
+
+    <h2>[BOUNDARY 03] Data Grounding over Guesswork</h2>
+
+    <p>Generative text without grounding is fiction. To ensure the copilot drafts are rooted in reality, the retrieval architecture operates in a constrained chain. Before the LLM generates a single token of the draft, it executes rigid API calls—fetching the user's specific Shopify order history, Zendesk historical interactions, and Stripe invoice states. The prompt is injected with this JSON payload, alongside the strict instruction: <em>If the intent requests a refund and the Stripe payload indicates the window has passed, decline the request regardless of sentiment.</em></p>
+
+    <p>By enforcing this workflow, we strip the language model of its most dangerous feature: autonomy. A support inbox copilot succeeds precisely because the engineering team builds walls around it, treating the AI as an incredibly fast typing assistant tethered securely to the database and gated faithfully by the human operator.</p>
+
+  </div>
+
+</body>
+</html>
