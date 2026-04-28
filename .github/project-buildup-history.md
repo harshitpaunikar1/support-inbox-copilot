@@ -23,7 +23,7 @@
 ## 2023-07-14 - Day 4: User flow
 
 - Task summary: After stepping away for a bit, came back and resolved a merge conflict that came up when I switched branches to check something else.
-- Deliverable: Nothing dramatic — just keeping things tidy.
+- Deliverable: Nothing dramatic - just keeping things tidy.
 ## 2023-07-17 - Day 5: Content outline
 
 - Task summary: By this point I had the rough direction, so the work became more practical. I spent most of the day trying to list the sections, messages, and data that need to appear in the project and make the whole thing feel less half baked. By now I had enough structure to keep going without staring at the screen too long, which honestly helped a lot. This kind of work is mostly small decisions stacked together, even if it does not look dramatic from outside.
@@ -35,7 +35,7 @@
 ## 2023-07-18 - Day 6: Architecture
 
 - Task summary: Spent another hour on this: resolved a merge conflict that came up when I switched branches to check something else.
-- Deliverable: Nothing dramatic — just keeping things tidy.
+- Deliverable: Nothing dramatic - just keeping things tidy.
 ## 2023-07-19 - Day 7: HTML scaffold
 
 - Task summary: This was the middle stretch where the project started feeling real. I kept going and tried to build the base page structure or component skeleton, then cleaned up whatever looked confusing or weak from the earlier days. The middle part always takes longer than it should, mostly becuase one fix usually reveals two more things to clean up. A good chunk of the day went into making the flow feel believable from a user point of view.
@@ -70,5 +70,5 @@
 - Deliverable: Cleaner than this morning's version.
 ## 2023-07-26 - Day 12: Polish wrap
 
-- Task summary: Got stuck mid-afternoon and had to regroup — the variable names were inconsistent so cleaned those up across the notebook before calling it done.
+- Task summary: Got stuck mid-afternoon and had to regroup - the variable names were inconsistent so cleaned those up across the notebook before calling it done.
 - Deliverable: Wrapped it up properly this time.

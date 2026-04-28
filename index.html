@@ -259,7 +259,7 @@
           </marker>
         </defs>
       </svg>
-      <figcaption>Fig 1. — The Confidence Threshold Meter. Raw ticket flow is intercepted by the semantic engine strictly to calculate routing trajectories. High-confidence hits bypass humans safely. Mid-tier ambiguity produces a staged draft, requiring immediate human validation. Low-confidence outliers drop directly into manual queueing to prevent AI hallucination injuries.</figcaption>
+      <figcaption>Fig 1. - The Confidence Threshold Meter. Raw ticket flow is intercepted by the semantic engine strictly to calculate routing trajectories. High-confidence hits bypass humans safely. Mid-tier ambiguity produces a staged draft, requiring immediate human validation. Low-confidence outliers drop directly into manual queueing to prevent AI hallucination injuries.</figcaption>
     </div>
 
     <h2>[BOUNDARY 02] The Human-in-the-Loop Interface</h2>
@@ -285,7 +285,7 @@
 
     <h2>[BOUNDARY 03] Data Grounding over Guesswork</h2>
 
-    <p>Generative text without grounding is fiction. To ensure the copilot drafts are rooted in reality, the retrieval architecture operates in a constrained chain. Before the LLM generates a single token of the draft, it executes rigid API calls—fetching the user's specific Shopify order history, Zendesk historical interactions, and Stripe invoice states. The prompt is injected with this JSON payload, alongside the strict instruction: <em>If the intent requests a refund and the Stripe payload indicates the window has passed, decline the request regardless of sentiment.</em></p>
+    <p>Generative text without grounding is fiction. To ensure the copilot drafts are rooted in reality, the retrieval architecture operates in a constrained chain. Before the LLM generates a single token of the draft, it executes rigid API calls-fetching the user's specific Shopify order history, Zendesk historical interactions, and Stripe invoice states. The prompt is injected with this JSON payload, alongside the strict instruction: <em>If the intent requests a refund and the Stripe payload indicates the window has passed, decline the request regardless of sentiment.</em></p>
 
     <p>By enforcing this workflow, we strip the language model of its most dangerous feature: autonomy. A support inbox copilot succeeds precisely because the engineering team builds walls around it, treating the AI as an incredibly fast typing assistant tethered securely to the database and gated faithfully by the human operator.</p>
 
